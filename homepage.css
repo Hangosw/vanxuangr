@@ -1031,6 +1031,13 @@ h1 {
   padding: 10px;
 }
 
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 10px);
+    right: auto;
+    margin-left: 175px;
+}
+
 /*  */
 
 .slider {
