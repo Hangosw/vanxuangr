@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="lien-he.css">
+  <link rel="stylesheet" href="reponsive-homepage.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="FontAwesome6.4Pro\FontAwesome6.4Pro\css\all.css">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="menu-active">
+    <div class="innner-menu-active">
+      <div class="img-container-menu-active">
+        <img src="img/logo-chu-dau-tu-van-xuan-land-group-1608694908.7669.png" alt="">
+      </div>
+
+      <div class="stand-navigation">
+        <div class="close-stand-navigation">
+          <small>CLOSE</small>
+          <i class="fa-sharp fa-solid fa-xmark-large"></i>
+        </div>
+
+        <ul>
+          <li><a class="current-li" style="font-weight: 700;" href="index.html">TRANG CHỦ <div>.01</div></a>
+          </li>
+          <li><a href="gioithieu.html">GIỚI THIỆU <div>.02</div></a>
+          </li>
+          <li><a href="cong-ty-thanh-vien.html">CÔNG TY THÀNH VIÊN <div>.03</div></a>
+          </li>
+          <li><a href="hoat-dong-kinh-doanh.html">HOẠT ĐỘNG KINH DOANH <div>.04</div></a>
+          </li>
+          <li><a href="du-an.html">DỰ ÁN <div>.05</div></a>
+          </li>
+          <li><a href="dich-vu.html">DỊCH VỤ KHÁCH HÀNG <div>.06</div></a>
+          </li>
+          <li><a href="nhan-luc.html">PHÁT TRIỂN NHÂN LỰC <div>.07</div></a>
+          </li>
+          <li><a href="tin-tuc-su-kien.html">TIN TỨC VÀ SỰ KIỆN <div>.08</div></a>
+          </li>
+          <li><a href="lien-he.html">LIÊN HỆ <div>.09</div></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bubbles-menu-active" id="bub1">
+        <div class="first-bub"></div>
+        <div class="second-bub"></div>
+        <div class="third-bub"></div>
+        <div class="fourth-bub"></div>
+        <div class="fifth-bub"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="navigation">
+    <div class="logo-container">
+      <a href="index.html"><img src="img/logo-chu-dau-tu-van-xuan-land-group-1608694908.7669.png"
+          alt="logo-vanxuan"></a>
+    </div>
+
+    <div class="right-menu">
+      <i class="fa-solid fa-magnifying-glass find-icon"></i>
+      <div class="usa-icon">
+        <img src="https://img.icons8.com/color/48/usa-circular.png" alt="usa-circular" />
+      </div>
+      <div class="menu-bar">
+        <i class="fa-solid fa-bars"></i>
+        <span>MENU</span>
+
+        <div class="hover-div"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Swiper -->
+  <div class="swiper mySwiper hide-1024">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="carousel carousel__fade">
+          <div class="carousel_inner">
+            <div class="carousel_item carousel_item__active">
+              <img src="img/swiper1/camille.jpg" class="carousel_img">
+            </div>
+
+            <div class="carousel_item">
+              <img src="img/swiper1/ezreal.jpg" class="carousel_img">
+            </div>
+
+            <div class="carousel_item">
+              <img src="img/swiper1/lissandra.jpg" class="carousel_img">
+            </div>
+
+            <div class="carousel_item">
+              <img src="img/swiper1/janna.jpg" class="carousel_img">
+            </div>
+
+            <div class="carousel_item">
+              <img src="img/swiper1/ksante.jpg" class="carousel_img">
+            </div>
+
+            <div class="carousel_item">
+              <img src="img/swiper1/sivir.jpg" class="carousel_img">
+            </div>
+
+            <div class="carousel_item">
+              <img src="img/swiper1/seraphine.jpg" class="carousel_img">
+            </div>
+
+            <ul class="dots">
+              <li class="active" data-index="0">1</li>
+              <li data-index="1">2</li>
+              <li data-index="2">3</li>
+              <li data-index="3">4</li>
+              <li data-index="4">5</li>
+              <li data-index="5">6</li>
+              <li data-index="6">7</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="nineteen-years">
+
+          <div class="in-19-year">
+            <span class="in">TRONG</span>
+            <p>19</p>
+            <span class="year">NĂM QUA</span>
+          </div>
+
+          <div class="circle"></div>
+
+          <div class="bubles" id="box">
+            <div class="bubble-1 bubble"></div>
+            <div class="bubble-2 bubble"></div>
+            <div class="bubble-3 bubble"></div>
+          </div>
+
+          <div class="data-19-years">
+            <div class="data-container">
+              <div class="data-icon counter">
+                <h1>ĐÃ TRIỂN KHAI</h1>
+                <h1 class="num"><span data-count="22">0</span></h1>
+                <p>DỰ ÁN</p>
+              </div>
+
+              <div class="data-icon counter">
+                <h1>CHO RA MẮT HƠN</h1>
+                <h1 class="num"><span data-count="5000">0</span></h1>
+                <p>SẢN PHẨM</p>
+              </div>
+
+              <div class="data-icon counter">
+                <h1>VỚI ĐỘI NGŨ HƠN</h1>
+                <h1 class="num"><span data-count="200">0</span></h1>
+                <p>NHÂN SỰ</p>
+              </div>
+
+              <div class="data-icon counter">
+                <h1>SẮP TRIỂN KHAI</h1>
+                <h1 class="num"><span data-count="2">0</span></h1>
+                <p>DỰ ÁN</p>
+              </div>
+
+              <div class="data-icon counter">
+                <h1>ĐÃ ĐẠT ĐƯỢC</h1>
+                <h1 class="num"><span data-count="7">0</span></h1>
+                <p>GIẢI THƯỞNG</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="typical-projects">
+          <div class="container" id="box1">
+            <div class="circle21 projects-circle-1"></div>
+            <div class="circle21 projects-circle-2"></div>
+            <div class="circle21 projects-circle-3"></div>
+          </div>
+
+          <div class="slider">
+            <div class="list">
+              <div class="item onscreen">
+                <div class="img-container-slider">
+                  <img src="img/swiper1/camille.jpg">
+                </div>
+
+                <div class="content-container">
+                  <h2>Piltower</h2>
+                  <h1>Camille</h1>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable
+                    English.
+                  </p>
+                  <div class="btn-content-container">
+                    XEM CHI TIẾT
+                    <div class="btn-content-container-div"></div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="item">
+                <div class="img-container-slider">
+                  <img src="img/swiper1/ezreal.jpg">
+                </div>
+
+                <div class="content-container">
+                  <h2>Piltower</h2>
+                  <h1>Ezreal</h1>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable
+                    English.
+                  </p>
+                  <div class="btn-content-container">
+                    XEM CHI TIẾT
+                    <div class="btn-content-container-div"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-container-slider">
+                  <img src="img/swiper1/janna.jpg">
+                </div>
+
+                <div class="content-container">
+                  <h2>Piltower</h2>
+                  <h1>Janna</h1>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable
+                    English.
+                  </p>
+                  <div class="btn-content-container">
+                    XEM CHI TIẾT
+                    <div class="btn-content-container-div"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-container-slider">
+                  <img src="img/swiper1/lissandra.jpg">
+                </div>
+
+                <div class="content-container">
+                  <h2>Freljord</h2>
+                  <h1>Lissandra</h1>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable
+                    English.
+                  </p>
+                  <div class="btn-content-container">
+                    XEM CHI TIẾT
+                    <div class="btn-content-container-div"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-container-slider">
+                  <img src="img/swiper1/sivir.jpg">
+                </div>
+
+                <div class="content-container">
+                  <h2>Shurima</h2>
+                  <h1>Sivir</h1>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable
+                    English.
+                  </p>
+                  <div class="btn-content-container">
+                    XEM CHI TIẾT
+                    <div class="btn-content-container-div"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="news-events">
+          <h1>TIN TỨC - SỰ KIỆN</h1>
+          <div class="inner-news-events">
+            <div class="col-1-news">
+              <div class="inner-news1">
+                <div class="img-news1-container">
+                  <img src="img/swiper1/seraphine.jpg">
+                </div>
+
+                <div class="content-news1-container">
+                  <div class="day-news1">
+                    <span class="month">06</span>
+                    <span class="my">06 - 2024</span>
+                  </div>
+
+                  <p>Ca sĩ hội chợ Seraphine. </p>
+                </div>
+              </div>
+
+              <div class="btn-news-events">
+                XEM THÊM TIN
+                <div></div>
+              </div>
+            </div>
+
+            <div class="col-2-news">
+              <div class="news2-1 mt">
+                <div class="inner-news2-1">
+                  <div class="img-news2-container">
+                    <img src="img/swiper1/janna.jpg">
+                  </div>
+
+                  <div class="content-news2-container">
+                    <div class="thumb2">
+                      <span class="month">06</span>
+                      <span class="my">06 - 2024</span>
+                    </div>
+
+                    <p>Thánh nữ công nghệ Janna. </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="news2-2">
+                <div class="inner-news2-1">
+                  <div class="img-news2-container">
+                    <img src="img/swiper1/sivir.jpg">
+                  </div>
+
+                  <div class="content-news2-container">
+                    <div class="thumb2">
+                      <span class="month">06</span>
+                      <span class="my">06 - 2024</span>
+                    </div>
+
+                    <p>Thợ săn tiền thưởng Sivir. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="bubbles-new" id="box2">
+            <div class="buble-new1"></div>
+            <div class="buble-new2"></div>
+            <div class="buble-new3"></div>
+          </div>
+
+          <div class="ignore-bubble-new">
+
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="partner">
+          <h1>ĐỐI TÁC</h1>
+          <div class="inner-partner">
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/koterasu.jpg">
+                </div>
+
+                <h2>KOTERASU PARTNERS PTE LTD</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/TBS.jpg">
+                </div>
+
+                <h2>TBS CAPITAL VN</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/Tongthaucentral.jpg">
+                </div>
+
+                <h2>CÔNG TY CỔ PHẦN XÂY DỰNG CENTRAL</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/ricons.jpg">
+                </div>
+
+                <h2>CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY DỰNG RICONS</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/LJ-logo.png">
+                </div>
+
+                <h2>LJ - ASIA</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/atelia.jpg">
+                </div>
+
+                <h2>ARTELIA</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/ongong.jpg">
+                </div>
+
+                <h2>CÔNG TY CỔ PHẦN TNHH ONG & ONG VIỆT NAM</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/CBRE.jpg">
+                </div>
+
+                <h2>CBRE</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/vcb.jpg">
+                </div>
+
+                <h2>NGÂN HÀNG TMCP NGOẠI THƯƠNG VIỆT NAM</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/MBBAnk.jpg">
+                </div>
+
+                <h2>NGÂN HÀNG TMCP QUÂN ĐỘI</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/bidv.jpg">
+                </div>
+
+                <h2>NGÂN HÀNG TMCP ĐẦU TƯ VÀ PHÁT TRIỂN VIỆT NAM</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/censg.jpg">
+                </div>
+
+                <h2>CÔNG TY CỔ PHẦN BẤT ĐỘNG SẢN CEN SÀI GÒN</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/vin.png">
+                </div>
+
+                <h2>CÔNG TY CỔ PHẦN BẤT ĐỘNG SẢN VIVA HOMES</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/qsl.png">
+                </div>
+
+                <h2>CÔNG TY CP ĐT QS LAND</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/KB.png">
+                </div>
+
+                <h2>KNIGHTRIDGE</h2>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="inner-brand">
+                <div class="img-container">
+                  <img src="img/doitac/aPLUS.png">
+                </div>
+
+                <h2>APLUS</h2>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="bubbles-new" id="box3">
+            <div class="buble-new1"></div>
+            <div class="buble-new2"></div>
+            <div class="buble-new3"></div>
+          </div>
+
+          <div class="ignore-bubble-brand">
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="clients">
+          <h1 class="h1-client">KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI</h1>
+          <div class="slider1">
+            <div class="list1">
+              <div class="item1 onscreen">
+                <div class="img-container-slider1">
+                  <img src="img/swiper1/janna.jpg">
+                </div>
+
+                <div class="content-container1">
+                  <i class="fa-solid fa-quote-left"></i>
+
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable
+                    English.
+                  </p>
+                  <h1>phóng viên thời Sự</h1>
+                </div>
+
+
+              </div>
+              <div class="item1">
+                <div class="img-container-slider1">
+                  <img src="img/swiper1/ezreal.jpg">
+                </div>
+
+                <div class="content-container1">
+                  <i class="fa-solid fa-quote-left"></i>
+
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable
+                    English.
+                  </p>
+                  <h1>em E Riu - Cư dân tự do</h1>
+                </div>
+              </div>
+              <div class="item1">
+                <div class="img-container-slider1">
+                  <img src="img/swiper1/ksante.jpg">
+                </div>
+
+                <div class="content-container1">
+                  <i class="fa-solid fa-quote-left"></i>
+
+
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable
+                    English.
+                  </p>
+                  <h1>ông Cư Sen Ty - Cư dân VX An Lộc</h1>
+                </div>
+              </div>
+              <div class="item1">
+                <div class="img-container-slider1">
+                  <img src="img/swiper1/lissandra.jpg">
+                </div>
+
+                <div class="content-container1">
+                  <i class="fa-solid fa-quote-left"></i>
+
+
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable
+                    English.
+                  </p>
+                  <h1>cô Lê San Ra - cư dân Happy One Phú Hòa</h1>
+                </div>
+              </div>
+              <div class="item1">
+                <div class="img-container-slider1">
+                  <img src="img/swiper1/sivir.jpg">
+                </div>
+
+                <div class="content-container1">
+                  <i class="fa-solid fa-quote-left"></i>
+
+
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable
+                    English.
+                  </p>
+                  <h1>Sivir - cư dân nhập cư</h1>
+                </div>
+              </div>
+            </div>
+            <div class="buttons1">
+              <button id="prev1"><i class="fa-solid fa-chevron-left"></i></button>
+              <button id="next1"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+
+          <div class="bubbles-clients" id="box2">
+            <div class="buble-clients1"></div>
+            <div class="buble-clients2"></div>
+            <div class="buble-clients3"></div>
+          </div>
+
+          <div class="ignore-bubble-client">
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="contact">
+          <h1>THÔNG TIN LIÊN HỆ</h1>
+          <div class="company-info">
+            <ul>
+              <li>
+                <h2>CÔNG TY CỔ PHẦN TẬP ĐOÀN ĐỊA ỐC VẠN XUÂN</h2>
+              </li>
+              <li><span>Website</span>
+                <p>VanXuanGroup.com.vn</p>
+              </li>
+              <li><span>Hotline</span>
+                <p>0918 959 339 (DVKH) <br> 0931 141 161 (Kinh Doanh)</p>
+              </li>
+              <li><span>Điện thoại</span>(028) 38 919 061</li>
+              <li class="media">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </li>
+
+              <li style="display: flex; flex-direction: column;">
+                <span>NHẬN THÔNG TIN TỪ CHÚNG TÔI</span>
+                <div class="input">
+                  <input type="text" placeholder="Email(*)">
+                  <div class="btn-ip">GỬI</div>
+                </div>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <section class="main-slider-none">
+    <div class="carousel carousel__fade">
+      <div class="carousel_inner">
+        <div class="carousel_item carousel_item__active">
+          <img src="img/swiper1/camille.jpg" class="carousel_img">
+        </div>
+
+        <div class="carousel_item">
+          <img src="img/swiper1/ezreal.jpg" class="carousel_img">
+        </div>
+
+        <div class="carousel_item">
+          <img src="img/swiper1/lissandra.jpg" class="carousel_img">
+        </div>
+
+        <div class="carousel_item">
+          <img src="img/swiper1/janna.jpg" class="carousel_img">
+        </div>
+
+        <div class="carousel_item">
+          <img src="img/swiper1/ksante.jpg" class="carousel_img">
+        </div>
+
+        <div class="carousel_item">
+          <img src="img/swiper1/sivir.jpg" class="carousel_img">
+        </div>
+
+        <div class="carousel_item">
+          <img src="img/swiper1/seraphine.jpg" class="carousel_img">
+        </div>
+
+        <ul class="dots">
+          <li class="active" data-index="0">1</li>
+          <li data-index="1">2</li>
+          <li data-index="2">3</li>
+          <li data-index="3">4</li>
+          <li data-index="4">5</li>
+          <li data-index="5">6</li>
+          <li data-index="6">7</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="nineteen-years-resize">
+      <!-- <div class="circle-nineteen-years-resize"></div> -->
+
+      <div class="inner-nineteen-years-resize">
+        <div class="content-nineteen-years-resize">
+          <span>TRONG</span>
+          <p>19</p>
+          <span class="ml110">NĂM QUA</span>
+        </div>
+  
+        <div class="data-nineteen-years-resize">
+          <div class="item-num">
+            <span>Đã triển khai</span>
+            <div class="num-s" data-count="22">0</div>
+            <span>Dự án</span>
+          </div>
+          <div class="item-num"><span>Cho ra mắt hơn</span>
+            <div class="num-s" data-count="5000">0</div>
+            <span>Sản phẩm</span>
+          </div>
+          <div class="item-num"><span>Với đội ngũ hơn</span>
+            <div class="num-s" data-count="200">0</div>
+            <span>Nhân sự</span>
+          </div>
+          <div class="item-num"><span>Sắp triển khai</span>
+            <div class="num-s" data-count="2">0</div>
+            <span>Dự án</span>
+          </div>
+          <div class="item-num"><span>Đã đạt được</span>
+            <div class="num-s" data-count="7">0</div>
+            <span>Giải thưởng</span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="typical-projects">
+
+
+      <div class="slider">
+        <div class="list">
+          <div class="item">
+            <div class="img-container-slider">
+              <img src="img/swiper1/camille.jpg">
+            </div>
+
+            <div class="content-container">
+              <h2>Các dự án tiêu biểu</h2>
+              <h1>Camille</h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable
+                English.
+              </p>
+              <div class="btn-content-container">
+                XEM CHI TIẾT
+                <div class="btn-content-container-div"></div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="item">
+            <div class="img-container-slider">
+              <img src="img/swiper1/ezreal.jpg">
+            </div>
+
+            <div class="content-container">
+              <h2>Piltower</h2>
+              <h1>Ezreal</h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable
+                English.
+              </p>
+              <div class="btn-content-container">
+                XEM CHI TIẾT
+                <div class="btn-content-container-div"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-container-slider">
+              <img src="img/swiper1/janna.jpg">
+            </div>
+
+            <div class="content-container">
+              <h2>Piltower</h2>
+              <h1>Janna</h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable
+                English.
+              </p>
+              <div class="btn-content-container">
+                XEM CHI TIẾT
+                <div class="btn-content-container-div"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-container-slider">
+              <img src="img/swiper1/lissandra.jpg">
+            </div>
+
+            <div class="content-container">
+              <h2>Freljord</h2>
+              <h1>Lissandra</h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable
+                English.
+              </p>
+              <div class="btn-content-container">
+                XEM CHI TIẾT
+                <div class="btn-content-container-div"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-container-slider">
+              <img src="img/swiper1/sivir.jpg">
+            </div>
+
+            <div class="content-container">
+              <h2>Shurima</h2>
+              <h1>Sivir</h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable
+                English.
+              </p>
+              <div class="btn-content-container">
+                XEM CHI TIẾT
+                <div class="btn-content-container-div"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="news-events-resize container-fluid">
+      <div class="inner-news-events-resize row">
+        <div class="tittle-news-events-resize col-lg-12">
+          <h1>TIN TỨC - SỰ KIỆN</h1>
+        </div>
+
+        <div class="news-resize">
+          <div class="new-1-resize col-lg-5">
+            <div class="inner-new-1-resize">
+              <div class="img-container-new-1-resize">
+                <img src="img/swiper1/lissandra.jpg">
+              </div>
+
+              <div class="content-img-container">
+
+                <div class="date-thumb-1-resize">
+                  <h1>06</h1>
+                  <p>06 - 2024</p>
+                </div>
+
+                <p class="p-resize">06 tiêu chí hút người mua "căn hộ tốt nhất Bình Dương"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-2-resize col-lg-7">
+            <div class="inner-new-2-resize">
+              <div class="img-container-new-2-resize">
+                <img src="img/swiper1/sivir.jpg">
+              </div>
+
+              <div class="content-img-container content-img-container2">
+                <div class="date-thumb-2-resize">
+                  <h1>14</h1>
+                  <p>05 - 2024</p>
+                </div>
+
+                <p class="p-resize">Đông đảo khách tham dự lễ mở bán 100 căn cuối Happy One Central</p>
+              </div>
+            </div>
+
+            <div class="inner-new-2-resize">
+              <div class="img-container-new-2-resize">
+                <img src="img/swiper1/ezreal.jpg">
+              </div>
+
+              <div class="content-img-container content-img-container2">
+                <div class="date-thumb-2-resize">
+                  <h1>14</h1>
+                  <p>05 - 2024</p>
+                </div>
+
+                <p class="p-resize">Đông đảo khách tham dự lễ mở bán 100 căn cuối Happy One Central</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-news-resize col-lg-12">
+          <div class="inner-btn-news-resize">
+            XEM THÊM TIN
+            <div></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="partner-resize container-fluid">
+      <h1>ĐỐI TÁC</h1>
+      <div class="inner-partner-resize row">
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/koterasu.jpg">
+            </div>
+
+            <h2>KOTERASU PARTNERS PTE LTD</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/TBS.jpg">
+            </div>
+
+            <h2>TBS CAPITAL VN</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/Tongthaucentral.jpg">
+            </div>
+
+            <h2>CÔNG TY CỔ PHẦN XÂY DỰNG CENTRAL</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/ricons.jpg">
+            </div>
+
+            <h2>CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY DỰNG RICONS</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/LJ-logo.png">
+            </div>
+
+            <h2>LJ - ASIA</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/atelia.jpg">
+            </div>
+
+            <h2>ARTELIA</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/ongong.jpg">
+            </div>
+
+            <h2>CÔNG TY CỔ PHẦN TNHH ONG & ONG VIỆT NAM</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/CBRE.jpg">
+            </div>
+
+            <h2>CBRE</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/vcb.jpg">
+            </div>
+
+            <h2>NGÂN HÀNG TMCP NGOẠI THƯƠNG VIỆT NAM</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/MBBAnk.jpg">
+            </div>
+
+            <h2>NGÂN HÀNG TMCP QUÂN ĐỘI</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/bidv.jpg">
+            </div>
+
+            <h2>NGÂN HÀNG TMCP ĐẦU TƯ VÀ PHÁT TRIỂN VIỆT NAM</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/censg.jpg">
+            </div>
+
+            <h2>CÔNG TY CỔ PHẦN BẤT ĐỘNG SẢN CEN SÀI GÒN</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/vin.png">
+            </div>
+
+            <h2>CÔNG TY CỔ PHẦN BẤT ĐỘNG SẢN VIVA HOMES</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/qsl.png">
+            </div>
+
+            <h2>CÔNG TY CP ĐT QS LAND</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/KB.png">
+            </div>
+
+            <h2>KNIGHTRIDGE</h2>
+          </div>
+        </div>
+
+        <div class="brand-resize col-lg-4">
+          <div class="inner-brand-resize">
+            <div class="img-container">
+              <img src="img/doitac/aPLUS.png">
+            </div>
+
+            <h2>APLUS</h2>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bubbles-new" id="box3">
+        <div class="buble-new1"></div>
+        <div class="buble-new2"></div>
+        <div class="buble-new3"></div>
+      </div>
+
+      <div class="ignore-bubble-brand">
+      </div>
+
+    </div>
+
+    <div class="clients-resize">
+      <h1 class="h1-client">KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI</h1>
+      <div class="slider1">
+        <div class="list1">
+          <div class="item1">
+            <div class="img-container-slider1">
+              <img src="img/swiper1/janna.jpg">
+            </div>
+
+            <div class="content-container1">
+              <i class="fa-solid fa-quote-left"></i>
+
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable
+                English.
+              </p>
+              <h2>chị phóng viên thời Sự</h2>
+            </div>
+
+
+          </div>
+          <div class="item1">
+            <div class="img-container-slider1">
+              <img src="img/swiper1/ezreal.jpg">
+            </div>
+
+            <div class="content-container1">
+              <i class="fa-solid fa-quote-left"></i>
+
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable
+                English.
+              </p>
+              <h2>em E Riu - Cư dân tự do</h2>
+            </div>
+          </div>
+          <div class="item1">
+            <div class="img-container-slider1">
+              <img src="img/swiper1/ksante.jpg">
+            </div>
+
+            <div class="content-container1">
+              <i class="fa-solid fa-quote-left"></i>
+
+
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable
+                English.
+              </p>
+              <h2>ông Cư Sen Ty - Cư dân VX An Lộc</h2>
+            </div>
+          </div>
+          <div class="item1">
+            <div class="img-container-slider1">
+              <img src="img/swiper1/lissandra.jpg">
+            </div>
+
+            <div class="content-container1">
+              <i class="fa-solid fa-quote-left"></i>
+
+
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable
+                English.
+              </p>
+              <h2>cô Lê San Ra - cư dân Happy One Phú Hòa</h2>
+            </div>
+          </div>
+          <div class="item1">
+            <div class="img-container-slider1">
+              <img src="img/swiper1/sivir.jpg">
+            </div>
+
+            <div class="content-container1">
+              <i class="fa-solid fa-quote-left"></i>
+
+
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable
+                English.
+              </p>
+              <h2>Sivir - cư dân nhập cư</h2>
+            </div>
+          </div>
+        </div>
+        <div class="buttons1">
+          <button id="prev1"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="next1"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h1>THÔNG TIN LIÊN HỆ</h1>
+      <div class="company-info">
+        <ul>
+          <li>
+            <h2>CÔNG TY CỔ PHẦN TẬP ĐOÀN ĐỊA ỐC VẠN XUÂN</h2>
+          </li>
+          <li><span>Website</span>
+            <p>VanXuanGroup.com.vn</p>
+          </li>
+          <li><span>Hotline</span>
+            <p>0918 959 339 (DVKH) <br> 0931 141 161 (Kinh Doanh)</p>
+          </li>
+          <li><span>Điện thoại</span>(028) 38 919 061</li>
+          <li class="media">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </li>
+
+          <li style="display: flex; flex-direction: column;">
+            <span>NHẬN THÔNG TIN TỪ CHÚNG TÔI</span>
+            <div class="input">
+              <input type="text" placeholder="Email(*)">
+              <div class="btn-ip">GỬI</div>
+            </div>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      loop: true,
+      speed: 1500,
+      effect: 'coverflow',
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + '0' + (index + 1) + "</span>";
+        },
+      },
+    });
+
+    mySwiper.on("slideChange", function () {
+      var activeSlide = mySwiper.slides[mySwiper.activeIndex];
+      var typicalProjectsSlide = activeSlide.querySelector(".typical-projects");
+      var menuBar = document.querySelector(".menu-bar");
+      var rightmenu = document.querySelector(".right-menu");
+
+      // Kiểm tra xem swiper-slide có chứa typical-projects không
+      if (typicalProjectsSlide) {
+        // Nếu có, thay đổi biên của menu-bar thành màu trắng
+        menuBar.style.border = "1px solid white";
+        rightmenu.style.color = "#fff"
+      } else {
+        // Nếu không, thì giữ biên của menu-bar như ban đầu
+        menuBar.style.border = ""; // Đặt lại biên về mặc định
+        rightmenu.style.color = ""
+      }
+    });
+  </script>
+</body>
+
+<!-- script -->
+<script src="swiper1.js"></script>
+<script src="bubble.js"></script>
+
+<!-- slider banner 3 -->
+<script>
+  let slider = document.querySelector('.slider .list');
+  let items = document.querySelectorAll('.slider .list .item');
+  let next = document.getElementById('next');
+  let prev = document.getElementById('prev');
+  let dots = document.querySelectorAll('.slider .dots li');
+  let list = document.querySelectorAll('.slider .list .item ')
+
+  let lengthItems = items.length - 1;
+  let active = 0;
+  next.onclick = function () {
+    active = active + 1 <= lengthItems ? active + 1 : 0;
+    reloadSlider();
+
+  }
+  prev.onclick = function () {
+    active = active - 1 >= 0 ? active - 1 : lengthItems;
+    reloadSlider();
+  }
+  // let refreshInterval = setInterval(() => { next.click() }, 3000);
+  function reloadSlider() {
+    slider.style.left = -items[active].offsetLeft + 'px';
+    // 
+    let last_active_dot = document.querySelector('.slider .dots li.active');
+    last_active_dot.classList.remove('active');
+    dots[active].classList.add('active');
+    // clearInterval(refreshInterval);
+    // refreshInterval = setInterval(() => { next.click() }, 3000);
+
+
+  }
+
+  dots.forEach((li, key) => {
+    li.addEventListener('click', () => {
+      active = key;
+      reloadSlider();
+    })
+  })
+  window.onresize = function (event) {
+    reloadSlider();
+  };
+</script>
+
+<!-- slider banner 4 -->
+<script>
+  let slider1 = document.querySelector('.slider1 .list1');
+  let items1 = document.querySelectorAll('.slider1 .list1 .item1');
+  let next1 = document.getElementById('next1');
+  let prev1 = document.getElementById('prev1');
+  let dots1 = document.querySelectorAll('.slider1 .dots1 li');
+  let list1 = document.querySelectorAll('.slider1 .list1 .item1 ')
+
+  let lengthItems1 = items1.length - 1;
+  let active1 = 0;
+  next1.onclick = function () {
+    active1 = active1 + 1 <= lengthItems1 ? active1 + 1 : 0;
+    reloadSlider();
+
+  }
+  prev1.onclick = function () {
+    active1 = active1 - 1 >= 0 ? active1 - 1 : lengthItems1;
+    reloadSlider();
+  }
+  // let refreshInterval = setInterval(() => { next.click() }, 3000);
+  function reloadSlider() {
+    slider1.style.left = -items1[active1].offsetLeft + 'px';
+    // 
+    let last_active_dot1 = document.querySelector('.slider1 .dots1 li.active');
+    last_active_dot1.classList.remove('active');
+    dots1[active1].classList.add('active');
+    // clearInterval(refreshInterval);
+    // refreshInterval = setInterval(() => { next.click() }, 3000);
+
+
+  }
+  window.onresize = function (event) {
+    reloadSlider();
+  };
+</script>
+
+<script>
+  let slider1resize = document.querySelector('.slider1-resize .list1-resize');
+  let items1resize = document.querySelectorAll('.slider1-resize .list1-resize .item1-resize');
+  let next1resize = document.getElementById('next1-resize');
+  let prev1resize = document.getElementById('prev1-resize');
+  let dots1resize = document.querySelectorAll('.slider1-resize .dots1-resize li');
+  let list1resize = document.querySelectorAll('.slider1-resize .list1-resize .item1-resize ')
+
+  let lengthItems1resize = items1 - resize.length - 1 - resize;
+  let active1resize = 0;
+  next1resize.onclick = function () {
+    active1resize = active1 - resize + 1 - resize <= lengthItems1 - resize ? active1 - resize + 1 - resize : 0;
+    reloadSlider();
+
+  }
+  prev1resize.onclick = function () {
+    active1resize = active1 - resize - 1 - resize >= 0 ? active1 - resize - 1 - resize : lengthItems1 - resize;
+    reloadSlider();
+  }
+  // let refreshInterval = setInterval(() => { next.click() }, 3000);
+  function reloadSlider() {
+    slider1resize.style.left = -items1resize[active1resize].offsetLeft + 'px';
+    // 
+    let last_active_dot1resize = document.querySelector('.slider1-resize .dots1-resize li.active');
+    last_active_dot1 - resize.classList.remove('active');
+    dots1[active1].classList.add('active');
+    // clearInterval(refreshInterval);
+    // refreshInterval = setInterval(() => { next.click() }, 3000);
+
+
+  }
+  window.onresize = function (event) {
+    reloadSlider();
+  };
+</script>
+
+<script>
+  gsap.from(".slider", { opacity: 0, y: 100, duration: 1.2 });
+</script>
+
+<!-- scroll data -->
+<script>
+  const counters = document.querySelectorAll(".item-num div");
+  const container = document.querySelector(".item-num")
+
+  let activated = false;
+
+  window.addEventListener("scroll", () => {
+    if (pageYOffset > container.offsetTop - container.offsetHeight - 200
+      && activated === false) {
+      counters.forEach(counters => {
+        counters.innerText = 0;
+        let count = 0;
+        function updateCount() {
+          const target = parseInt(counters.dataset.count);
+          if (count < target) {
+            count += 5;
+            counters.innerText = count;
+            setTimeout(updateCount, 0.1);
+          } else {
+            counters.innerText = target;
+          }
+        }
+
+        updateCount();
+        activated = true;
+      });
+
+    } else if (
+      pageYOffset < container.offsetTop - container.offsetHeight - 500
+      || pageYOffset === 0
+      && activated === true
+    ) {
+      counters.forEach(counter => {
+        counter.innerText = 0;
+      });
+
+      activated = false;
+    }
+  })
+
+</script>
+
+<script>
+  function createBubble() {
+    const section = document.querySelector('.menu-active');
+    const createElement = document.createElement('span')
+    var size = Math.random() * 30;
+
+    createElement.style.width = 20 + size + 'px';
+    createElement.style.height = 20 + size + 'px';
+    createElement.style.left = Math.random() * innerWidth + 'px';
+    section.appendChild(createElement);
+
+    setTimeout(() => {
+      createElement.remove()
+    }, 4000)
+
+  }
+
+  setInterval(createBubble, 350);
+</script>
+
+<!-- bubble menu -->
+<script>
+  var var_xOffset = 0;
+  var var_yOffset = 0;
+
+  document.addEventListener('mousemove', function (e) {
+    var_xOffset = (e.clientX / window.innerWidth) * 20;
+    var_yOffset = (e.clientY / window.innerHeight) * 20;
+
+    document.getElementById('bub1').style.transform = 'translate(' + var_xOffset + 'px, ' + var_yOffset + 'px)';
+  });
+</script>
+
+<script>
+  const btnactive = document.querySelector('.menu-bar');
+  const menuactive = document.querySelector('.menu-active');
+  const btncls = document.querySelector('.close-stand-navigation');
+
+  btnactive.addEventListener('click', function () {
+    menuactive.classList.add('clicked');
+  })
+
+  btncls.addEventListener('click', function () {
+    menuactive.classList.remove('clicked');
+  })
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && menu.classList.contains('clicked')) {
+      menu.classList.remove('clicked');
+    }
+  });
+
+
+</script>
+
+<script>
+  window.addEventListener('scroll', function () {
+    var header = document.querySelector(".navigation");
+    var nav = document.querySelector('.navigation-main-banner');
+
+    var itemac1 = document.querySelector('.itemnav1');
+    var itemac2 = document.querySelector('.itemnav2');
+    var itemac3 = document.querySelector('.itemnav3');
+    var itemac4 = document.querySelector('.itemnav4');
+
+    header.classList.toggle('sticky', window.scrollY > 0);
+    nav.classList.toggle('stick', window.scrollY > 500);
+    if (window.scrollY >= 0 && window.scrollY < 1200) {
+      itemac1.classList.add('current');
+      itemac2.classList.remove('current')
+      itemac3.classList.remove('current')
+      itemac4.classList.remove('current')
+    } else if (window.scrollY >= 1200 && window.scrollY < 3300) {
+      itemac2.classList.add('current');
+      itemac1.classList.remove('current')
+      itemac3.classList.remove('current')
+      itemac4.classList.remove('current')
+    } else if (window.scrollY >= 3300 && window.scrollY < 3900) {
+      itemac1.classList.remove('current')
+      itemac2.classList.remove('current');
+      itemac3.classList.add('current');
+      itemac4.classList.remove('current')
+    } else if (window.scrollY >= 3900) {
+      itemac1.classList.remove('current')
+      itemac2.classList.remove('current');
+      itemac3.classList.remove('current');
+      itemac4.classList.add('current')
+    }
+
+  }
+  )
+</script>
