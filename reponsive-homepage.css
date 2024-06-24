@@ -165,6 +165,8 @@
     .news-resize {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .img-container-new-1-resize {
