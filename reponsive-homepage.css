@@ -384,6 +384,7 @@
     .item1 {
         width: 785px;
     }
+
     /*  */
 
     .partner-resize h1 {
@@ -586,14 +587,26 @@
 }
 
 @media only screen and (max-width: 426px) {
+    .input {
+        width: 95%;
+    }
+
+    .content-container {
+        height: 120px;
+    }
+
+    .navigation.sticky .logo-container {
+        margin-left: 0px;
+    }
 
     .btn-content-container {
         margin-bottom: 30px;
     }
+
     .content-nineteen-years-resize {
         margin-top: 55px;
     }
-    
+
     .stand-navigation ul li a {
         font-size: 10px;
     }
@@ -622,7 +635,7 @@
     }
 
     .img-container-slider1 {
-        width: 100%;
+        width: 60%;
     }
 
     .content-container1 {
@@ -728,5 +741,9 @@
 
     .dots {
         right: 22%;
+    }
+
+    .img-container-slider {
+        width: 60%;
     }
 }
