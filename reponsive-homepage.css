@@ -587,7 +587,7 @@
 
 @media only screen and (max-width: 426px) {
     .stand-navigation ul li {
-        width: 2.1vh;
+        font-size: 2.1vh;
     }
     
     .item1 {
