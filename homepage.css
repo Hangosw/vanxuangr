@@ -1011,14 +1011,14 @@ h1 {
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
   content: 'prev';
-  margin-left: 1500px;
+  margin-left: 3080px;
   margin-top: 320px;
 }
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   content: 'next';
-  margin-right: 750px;
+  margin-right: 1815px;
   margin-top: 320px;
 }
 
