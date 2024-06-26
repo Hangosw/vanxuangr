@@ -526,4 +526,8 @@ textarea {
     .navigation.sticky .logo-container {
         margin-left: 0px;
     }
+    
+    .stand-navigation ul li a {
+        font-size: 10px;
+    }
 }
