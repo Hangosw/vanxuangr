@@ -677,4 +677,8 @@ input[type="text"] {
     .content-business-container {
         padding: 30px 0px;
     }
+
+    #img-business-container {
+        width: 100%;
+    }
 }
