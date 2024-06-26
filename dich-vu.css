@@ -565,7 +565,7 @@ h1 {
     line-height: 54px;
     text-align: left;
     white-space: nowrap;
-    text-overflow: ellipsis;    
+    text-overflow: ellipsis;
     overflow: hidden;
 }
 
@@ -841,8 +841,16 @@ input[type="text"] {
         margin-left: 0px;
     }
 
-    .stand-navigation ul li a {
-        font-size: 10px;
+    .inner-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .img-logo-footer {
+        width: 30%;
+
     }
 
 }
@@ -863,6 +871,4 @@ input[type="text"] {
 }
 
 
-@media only screen and (max-width:769px) {
-    
-}
+@media only screen and (max-width:769px) {}
