@@ -587,6 +587,9 @@
 
 @media only screen and (max-width: 426px) {
 
+    .btn-content-container {
+        margin-bottom: 30px;
+    }
     .content-nineteen-years-resize {
         margin-top: 55px;
     }
