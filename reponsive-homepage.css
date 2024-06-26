@@ -586,8 +586,13 @@
 }
 
 @media only screen and (max-width: 426px) {
-    .stand-navigation ul li {
-        font-size: 2.1vh;
+
+    .content-nineteen-years-resize {
+        margin-top: 55px;
+    }
+    
+    .stand-navigation ul li a {
+        font-size: 10px;
     }
     
     .item1 {
