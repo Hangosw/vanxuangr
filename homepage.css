@@ -328,6 +328,7 @@ h1 {
 
 .logo-container {
   width: 120px;
+  transition: 1s all ease;
 }
 
 .logo-container img {
@@ -1007,19 +1008,22 @@ h1 {
   z-index: 5;
 }
 
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
   content: 'prev';
-  margin-left: 1850px;
+  margin-left: 1500px;
   margin-top: 320px;
 }
 
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
   content: 'next';
-  margin-right: 1000px;
+  margin-right: 750px;
   margin-top: 320px;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   font-family: swiper-icons;
   font-size: 20px;
   color: #fff;
@@ -1031,12 +1035,7 @@ h1 {
   padding: 10px;
 }
 
-}
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 10px);
-    right: auto;
-    margin-left: 175px;
-}
+
 
 /*  */
 
@@ -1959,10 +1958,10 @@ h1 {
   content: "";
   position: relative;
   display: block;
-  margin: 20px 0;
-  width: 12vw;
+  margin: 20px auto 0;
+  width: 80%;
   height: 1px;
-  background: linear-gradient(90deg, #ccc, #ccc 50%, hsla(0, 0%, 80%, 0));
+  background: linear-gradient(90deg, hsla(0, 0%, 80%, 0), #ccc 20%, #ccc 80%, hsla(0, 0%, 80%, 0));
 }
 
 .company-info li span {
